@@ -23,17 +23,6 @@ public class CartSteps {
     }
 
 
-    @Given("Go to the cart")
-    public void go_to_the_cart() {
-        WebElement cartButton = driver.findElement(By.xpath("//h4[@class='common-sprite']"));
-        cartButton.click();
-        WebElement cartLink = driver.findElement(By.xpath("//a[@id='js-cart']"));
-        cartLink.click();
-    }
-    @Given("Verify that its the same item in the cart")
-    public void verify_that_its_the_same_item_in_the_cart() {
-
-    }
     @Given("Remove the item")
     public void remove_the_item() {
         WebElement removeButton = driver.findElement(By.xpath("//i[@class='fa fa-times red-icon']"));
